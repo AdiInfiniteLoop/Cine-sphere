@@ -1,5 +1,11 @@
-// import Header from "@/components/Header";
+import MovieSearch from "@/components/MovieSearch";
 
 export default function Home() {
-  return <div>{/* <Header /> */}</div>;
+  return (
+    <div className="min-h-screen bg-gray-600 dark:bg-gray-900">
+      <main className="container mx-auto px-4 py-8">
+        <MovieSearch />
+      </main>
+    </div>
+  );
 }
