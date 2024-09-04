@@ -6,7 +6,6 @@ import { FaSearch } from "react-icons/fa";
 const SearchBar = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Effect to fetch data whenever searchTerm changes
   useEffect(() => {
     const fetchData = async () => {
       if (searchTerm.trim()) {
@@ -23,18 +22,19 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <form className="max-w-3xl mx-auto mb-8">
+    <form className="max-w-4xl mx-auto mb-8 p-3 ">
       <div className="relative">
         <input
           type="text"
           value={searchTerm}
           onChange={handleChange}
           placeholder="Search for movies..."
-          className="w-full p-2 pl-10 pr-4 rounded-full border hover:bg-c border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+          className="w-full p-4 pl-10 pr-4 rounded-full border hover:bg-c border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
         />
         <button
           type="submit"
           className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+          disabled
         >
           <FaSearch />
         </button>

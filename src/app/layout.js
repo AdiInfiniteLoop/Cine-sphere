@@ -1,14 +1,15 @@
-import { Sora } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import NextTopLoader from "nextjs-toploader";
 
-const inter = Sora({ subsets: ["latin"] });
+const inter = Space_Grotesk({ subsets: ["latin-ext"] });
 
 export const metadata = {
   title: "Cine Sphere",
+  image: "/theater.png",
   description: "This is a Movie Search App",
 };
 
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
         <NextTopLoader />
         <Providers>
           <Header />
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
         </Providers>
       </body>
