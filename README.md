@@ -56,10 +56,7 @@ To run this project locally, you need to have the following tools installed:
 
 5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-## Usage
-Once the application is running, you can:
-- Search for movies using the search bar.
-- View detailed information for any movie, including its plot, release year, and genre.
+![CineSphere](./public/DirectoryStructure)
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
