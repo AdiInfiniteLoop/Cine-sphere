@@ -57,7 +57,7 @@ To run this project locally, you need to have the following tools installed:
 
 5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-![CineSphere](./public/DirStruct.png)
+![CineSphere](./public/DirStruct)
 
 ## Usage
 Once the application is running, you can:
