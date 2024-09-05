@@ -6,6 +6,7 @@ import Image from "next/image";
 import LoadingPage from "@/app/loading";
 import ErrorPage from "@/app/error";
 import MovieNotFound from "@/components/MovieNotFound";
+import { toast } from "sonner";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
@@ -63,6 +64,7 @@ export default function MovieDetail() {
       favorites.push(movie);
       localStorage.setItem("favorites", JSON.stringify(favorites));
       setIsFavorite(true);
+      toast("Added in favorites");
     }
   };
 
@@ -73,6 +75,7 @@ export default function MovieDetail() {
     );
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
     setIsFavorite(false);
+    toast("Removed from favorites");
   };
 
   if (loading) return <LoadingPage />;
@@ -92,6 +95,7 @@ export default function MovieDetail() {
           <Image
             src={movie.Poster !== "N/A" ? movie.Poster : "/theater.png"}
             alt={movie.Title}
+            onError={(e) => (e.currentTarget.src = "/theater.png")}
             width={300}
             height={350}
             className="w-full rounded-lg shadow-md"

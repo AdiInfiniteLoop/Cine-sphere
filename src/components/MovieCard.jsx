@@ -22,9 +22,17 @@ const MovieCard = ({ movie }) => {
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-2 flex-grow">
           <div className="w-full h-[250px] relative">
+            {/* <Image
+              src={movie.Poster !== "N/A" ? movie.Poster : "/theater.png"}
+              alt={movie.Title}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg group-hover/card:shadow-xl"
+            /> */}
             <Image
               src={movie.Poster !== "N/A" ? movie.Poster : "/theater.png"}
               alt={movie.Title}
+              onError={(e) => (e.currentTarget.src = "/theater.png")}
               layout="fill"
               objectFit="cover"
               className="rounded-lg group-hover/card:shadow-xl"

@@ -2,8 +2,8 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
 import Header from "@/components/Header";
-// import Navbar from "@/components/Navbar";
 import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "sonner";
 
 const inter = Space_Grotesk({ subsets: ["latin-ext"] });
 
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           {/* <Navbar /> */}
+          <Toaster />
           {children}
         </Providers>
       </body>

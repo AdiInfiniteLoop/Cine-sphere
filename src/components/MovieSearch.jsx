@@ -4,6 +4,7 @@ import { useState } from "react";
 import MovieList from "./MovieList";
 import SearchBar from "./SearchBar";
 import LoadingPage from "@/app/loading";
+import ErrorPage from "@/app/error";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
@@ -130,9 +131,7 @@ export default function MovieSearch() {
       {!loading && (
         <>
           <MovieList movies={movies} />
-          {error && (
-            <div className="text-center mt-4 text-red-600">{error}</div>
-          )}
+          {error && <ErrorPage errorMessage={error} />}
           {searchTerm && totalResults > 0 && (
             <div className="flex justify-center mt-4 items-center">
               <button
