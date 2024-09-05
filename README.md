@@ -1,6 +1,6 @@
 # CineSphere
 
-A web application built with Next.js that allows users to search for movies and view detailed information using the OMDb API. The application features a clean and responsive design, focusing on usability and performance.
+A responsive web application built with Next.js that allows users to search for movies and view detailed information using the OMDb API. The application features a clean and responsive design, focusing on usability and performance.
 
 ## Table of Contents
 - [About The Project](#about-the-project)
@@ -9,6 +9,7 @@ A web application built with Next.js that allows users to search for movies and 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Future Development](#future-development)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -56,7 +57,17 @@ To run this project locally, you need to have the following tools installed:
 
 5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-![CineSphere](./public/DirectoryStructure)
+![CineSphere](./public/DirStruct.png)
+
+## Usage
+Once the application is running, you can:
+- Search for movies using the search bar.
+- View detailed information for any movie, including its plot, release year, and genre.
+
+## Future Development
+- **Multilingual Support**: Adding support for multiple languages to cater to a global audience using next-i18next.
+- **SEO Improvements**: Further optimizing the application for search engines to increase visibility.
+- **Movie Recommendation System**: Implementing a recommendation engine using vector embeddings to provide personalized movie suggestions.
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
