@@ -47,7 +47,7 @@ To run this project locally, you need to have the following tools installed:
 3. Set up your OMDb API key:
    - Create a `.env.local` file in the root directory and add your OMDb API key:
      ```
-     OMDB_API_KEY=your_api_key_here
+     NEXT_PUBLIC_API_KEY = your_api_key_here
      ```
 
 4. Run the development server:
